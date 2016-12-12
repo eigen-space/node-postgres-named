@@ -83,8 +83,6 @@ function patch(client) {
 
       cb = (args.length === 3) ? args[2] : undefined;
 
-      console.log(args[0], args[1]);
-
       transformed = numericFromNamed(args[0], args[1]);
 
       return originalQuery(transformed.sql, transformed.values, cb);
